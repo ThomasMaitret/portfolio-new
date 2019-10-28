@@ -1,0 +1,15 @@
+{
+  "background_color": "#ffffff",
+  "theme_color": "#5352ed",
+  "name": "Thomas Maitret",
+  "short_name": "Thomas Maitret",
+  "display": "standalone",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "150x150",
+      "type": "image/png"
+    }
+  ]
+}

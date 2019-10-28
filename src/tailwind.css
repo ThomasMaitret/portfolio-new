@@ -1,0 +1,17 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+:root {
+  --theme-color: #5352ed;
+}
+
+body {
+  border-top: 6px solid var(--theme-color);
+}
+
+a:focus,
+button:focus {
+  outline: 3px dotted var(--theme-color);
+  outline-offset: 0;
+}
