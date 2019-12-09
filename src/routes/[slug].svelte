@@ -55,7 +55,7 @@
   on:click={goBack}
   class="bg-gray-300 hover:bg-gray-400 text-gray-800 py-2 px-4 rounded
   inline-block mb-10 mt-4">
-  ← retour
+  retour
 </button>
 <h1 class="text-4xl font-mono font-semibold">{post.title}</h1>
 <h3 class="text-xl text-gray-600 font-mono">{post.date}</h3>

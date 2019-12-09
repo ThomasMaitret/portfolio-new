@@ -16,7 +16,7 @@
   <title>Thomas Maitret</title>
 </svelte:head>
 <header class="mb-32">
-  <h1 class="text-3xl md:text-5xl font-serif mt-12 md:mt-24">
+  <h1 class="text-3xl md:text-5xl mt-12 md:mt-24">
     Bonjour, je suis Thomas Maitret.
   </h1>
   <h2 class="text-xl max-w-3xl mt-1">

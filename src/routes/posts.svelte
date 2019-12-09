@@ -17,7 +17,7 @@
   rel="prefetch"
   class="bg-gray-300 hover:bg-gray-400 text-gray-800 py-2 px-4 rounded
   inline-block mb-10 mt-4">
-  ← accueil
+  accueil
 </a>
 <h3 class="text-3xl mb-4">Articles</h3>
 <ul>
