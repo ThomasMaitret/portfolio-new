@@ -10,7 +10,16 @@ const { PORT, NODE_ENV } = process.env;
 const dev = NODE_ENV === "development";
 
 polka()
-  .use(helmet(), shrinkRay(), sirv("static", { dev }), middleware())
+  .use(
+    helmet(),
+    shrinkRay(),
+    sirv("static", {
+      dev,
+      maxAge: 31536000, // 1Y
+      immutable: true
+    }),
+    middleware()
+  )
   .listen(PORT, err => {
     if (err) console.log("error", err);
   });

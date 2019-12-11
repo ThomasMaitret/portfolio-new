@@ -57,9 +57,8 @@
   inline-block mb-10 mt-4">
   retour
 </button>
-<h1 class="text-4xl font-mono font-semibold">{post.title}</h1>
-<h3 class="text-xl text-gray-600 font-mono">{post.date}</h3>
-
-<div class="content mt-6 max-w-3xl">
+<h1 class="text-4xl font-bold">{post.title}</h1>
+<h3 class="text-xl text-gray-800">{post.date}</h3>
+<div class="content max-w-3xl mt-16">
   {@html post.html}
 </div>

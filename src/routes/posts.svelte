@@ -22,10 +22,10 @@
 <h3 class="text-3xl mb-4">Articles</h3>
 <ul>
   {#each posts as post}
-    <li class="mb-3 flex items-center text-lg font-mono">
-      <span class="text-gray-600 font-sm mr-3">{post.date}</span>
+    <li class="mb-3 flex items-center text-lg">
+      <span class="text-gray-800 font-sm mr-3">{post.date}</span>
       <a
-        class="font-semibold hover:underline"
+        class="font-bold hover:underline"
         rel="prefetch"
         href="./{post.slug}">
         {post.title}

@@ -16,7 +16,7 @@
   <title>Thomas Maitret</title>
 </svelte:head>
 <header class="mb-32">
-  <h1 class="text-3xl md:text-5xl mt-12 md:mt-24">
+  <h1 class="text-3xl md:text-5xl mt-12 md:mt-24 font-bold">
     Bonjour, je suis Thomas Maitret.
   </h1>
   <h2 class="text-xl max-w-3xl mt-1">
@@ -25,11 +25,11 @@
       rel="noopener"
       href="https://www.groupeonepoint.com/fr"
       target="_blank"
-      class="font-semibold hover:underline">
+      class="font-bold hover:underline">
       onepoint.
     </a>
   </h2>
-  <p class="mt-6 font-light max-w-3xl">
+  <p class="mt-6 max-w-3xl">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget bibendum
     nulla. Duis in libero quis ipsum cursus luctus. Aliquam porta lorem quis
     felis semper tincidunt. Integer commodo ipsum risus, ac sagittis risus
@@ -38,7 +38,7 @@
     porta ornare, erat mauris efficitur risus, ac placerat mi enim nec dui.
     Etiam in arcu nisl.
   </p>
-  <div class="inline-flex items-center mt-6">
+  <div class="inline-flex items-center mt-8">
     <a
       href="https://twitter.com/ThomasMaitret"
       target="_blank"
@@ -74,10 +74,10 @@
   <h3 class="text-3xl mb-4">Articles récents</h3>
   <ul>
     {#each posts as post}
-      <li class="mb-3 flex items-center text-lg font-mono">
-        <span class="text-gray-600 font-sm mr-3">{post.date}</span>
+      <li class="mb-3 flex items-center text-lg">
+        <span class="text-gray-800 font-sm mr-3">{post.date}</span>
         <a
-          class="font-semibold hover:underline"
+          class="font-bold hover:underline"
           rel="prefetch"
           href="./{post.slug}">
           {post.title}
