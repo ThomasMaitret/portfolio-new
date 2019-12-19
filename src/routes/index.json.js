@@ -1,4 +1,4 @@
-import posts from "./_posts.js";
+import posts from "./blog/_posts.js";
 
 const contents = JSON.stringify(
   posts.slice(0, 5).map(post => {

@@ -13,13 +13,14 @@
 </script>
 
 <svelte:head>
-  <title>Thomas Maitret</title>
+  <title>Thomas Maitret - Développeur Front-end</title>
 </svelte:head>
-<header class="mb-32">
-  <h1 class="text-3xl md:text-5xl mt-12 md:mt-24 font-bold">
+
+<section>
+  <h1 class="text-3xl md:text-5xl font-bold">
     Bonjour, je suis Thomas Maitret.
   </h1>
-  <h2 class="text-xl max-w-3xl mt-1">
+  <h2 class="text-2xl max-w-3xl mt-2">
     Je suis développeur Front-end chez
     <a
       rel="noopener"
@@ -29,14 +30,15 @@
       onepoint.
     </a>
   </h2>
-  <p class="mt-6 max-w-3xl">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget bibendum
-    nulla. Duis in libero quis ipsum cursus luctus. Aliquam porta lorem quis
-    felis semper tincidunt. Integer commodo ipsum risus, ac sagittis risus
-    lacinia vitae. Mauris auctor, sapien eget accumsan pellentesque, quam dolor
-    dapibus nunc, ac tincidunt ante erat at nibh. Integer pharetra, ex quis
-    porta ornare, erat mauris efficitur risus, ac placerat mi enim nec dui.
-    Etiam in arcu nisl.
+  <p class="mt-5 max-w-3xl text-lg leading-relaxed">
+    Mon objectif premier est de créer des interfaces sobres et faciles
+    d'utilisation, tout en mettant l'accent sur la
+    <strong>performance</strong>
+    et l'
+    <strong>accessibilité</strong>
+    .
+    <br />
+    J'ai une bonne expérience avec le framework Angular ainsi qu'avec NodeJS.
   </p>
   <div class="inline-flex items-center mt-8">
     <a
@@ -45,13 +47,6 @@
       rel="noopener"
       class="mr-4">
       <img width="30px" src="/social/twitter.svg" alt="Twitter profile" />
-    </a>
-    <a
-      href="https://dev.to/thomasmaitret"
-      target="_blank"
-      rel="noopener"
-      class="mr-4">
-      <img width="30px" src="/social/devto.svg" alt="Devto profile" />
     </a>
     <a
       href="https://github.com/ThomasMaitret"
@@ -68,28 +63,23 @@
       <img width="30px" src="/social/linkedin.svg" alt="Linkedin profile" />
     </a>
   </div>
-</header>
+</section>
 
 {#if posts.length > 0}
-  <h3 class="text-3xl mb-4">Articles récents</h3>
-  <ul>
-    {#each posts as post}
-      <li class="mb-3 flex items-center text-lg">
-        <span class="text-gray-800 font-sm mr-3">{post.date}</span>
-        <a
-          class="font-bold hover:underline"
-          rel="prefetch"
-          href="./{post.slug}">
-          {post.title}
-        </a>
-      </li>
-    {/each}
-  </ul>
-  <a
-    href="/posts"
-    rel="prefetch"
-    class="inline-block bg-gray-300 hover:bg-gray-400 text-gray-800 py-1 px-3
-    rounded mt-3 text-sm">
-    Voir tous
-  </a>
+  <section class="mt-32">
+    <h3 class="text-3xl mb-4">Articles récents</h3>
+    <ul>
+      {#each posts as post}
+        <li class="mb-3 flex items-center text-lg">
+          <span class="text-gray-800 font-sm mr-3">{post.date}</span>
+          <a
+            class="font-bold hover:underline"
+            rel="prefetch"
+            href="blog/{post.slug}">
+            {post.title}
+          </a>
+        </li>
+      {/each}
+    </ul>
+  </section>
 {/if}

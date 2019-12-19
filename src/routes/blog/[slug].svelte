@@ -2,7 +2,7 @@
   export async function preload({ params }) {
     // the `slug` parameter is available because
     // this file is called [slug].svelte
-    const res = await this.fetch(`${params.slug}.json`);
+    const res = await this.fetch(`blog/${params.slug}.json`);
     const data = await res.json();
 
     if (res.status === 200) {
@@ -50,13 +50,6 @@
   <title>{post.title}</title>
 </svelte:head>
 
-<button
-  type="button"
-  on:click={goBack}
-  class="bg-gray-300 hover:bg-gray-400 text-gray-800 py-2 px-4 rounded
-  inline-block mb-10 mt-4">
-  retour
-</button>
 <h1 class="text-4xl font-bold">{post.title}</h1>
 <h3 class="text-xl text-gray-800">{post.date}</h3>
 <div class="content max-w-3xl mt-16">

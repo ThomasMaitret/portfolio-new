@@ -11511,7 +11511,7 @@ body {
 
 a:focus,
 button:focus {
-  outline: 3px dotted var(--theme-color);
+  outline: 4px solid var(--theme-color);
   outline-offset: 0;
 }
 
