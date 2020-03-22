@@ -4,13 +4,11 @@
   "version": "2.0.0",
   "scripts": {
     "dev": "sapper dev",
-    "build": "sapper build",
-    "export": "sapper export",
+    "watch:tailwind": "postcss static/tailwind.css -o static/index.css -w",
+    "build:tailwind": "NODE_ENV=production postcss static/tailwind.css -o static/index.css",
+    "build": "npm run build:tailwind && sapper build --legacy",
     "start": "npm run build && node __sapper__/build"
   },
-  "browserslist": [
-    "last 2 version"
-  ],
   "dependencies": {
     "helmet": "^3.21.3",
     "polka": "^0.5.2",
@@ -18,27 +16,27 @@
     "sirv": "^0.4.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/runtime": "^7.9.2",
     "@fullhuman/postcss-purgecss": "^2.1.0",
-    "autoprefixer": "^9.7.4",
-    "cssnano": "^4.1.10",
+    "@rollup/plugin-commonjs": "^11.0.2",
+    "@rollup/plugin-node-resolve": "^7.1.1",
+    "@rollup/plugin-replace": "^2.3.1",
     "postcss": "^7.0.27",
-    "postcss-import": "^12.0.1",
-    "postcss-url": "^8.0.0",
-    "purgecss-from-svelte": "^2.0.2",
-    "rollup": "^2.0.6",
+    "postcss-cli": "7.1.0",
+    "rollup": "^2.1.0",
     "rollup-plugin-babel": "^4.4.0",
-    "rollup-plugin-commonjs": "^10.1.0",
-    "rollup-plugin-node-resolve": "^5.2.0",
-    "rollup-plugin-postcss": "^2.4.1",
-    "rollup-plugin-replace": "^2.2.0",
     "rollup-plugin-svelte": "^5.1.1",
     "rollup-plugin-terser": "^5.3.0",
-    "sapper": "^0.27.10",
+    "sapper": "^0.27.11",
     "svelte": "^3.20.1",
     "svelte-preprocess": "^3.5.0",
     "tailwindcss": "^1.2.0"
   },
   "optionalDependencies": {
-    "node-zopfli-es": "~1.0.3"
+    "node-zopfli-es": "~1.0.4"
   }
 }

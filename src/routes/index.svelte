@@ -31,12 +31,9 @@
     </a>
   </h2>
   <p class="mt-5 max-w-3xl text-lg leading-relaxed">
-    Mon objectif premier est de créer des interfaces sobres et faciles
+    Mon objectif est de créer des interfaces sobres et faciles
     d'utilisation, tout en mettant l'accent sur la
-    <strong>performance</strong>
-    et l'
-    <strong>accessibilité</strong>
-    .
+    <strong>performance</strong> et l'<strong>accessibilité</strong>.
     <br />
     J'ai une bonne expérience avec le framework Angular ainsi qu'avec NodeJS.
   </p>

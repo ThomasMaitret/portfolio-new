@@ -12,6 +12,10 @@
   export let posts;
 </script>
 
+<svelte:head>
+  <title>Blog</title>
+</svelte:head>
+
 <h1 class="text-3xl md:text-5xl font-bold">Blog</h1>
 <ul class="mt-5">
   {#each posts as post}
