@@ -33,8 +33,3 @@ button:focus {
   outline: 4px solid var(--theme-color);
   outline-offset: 0;
 }
-
-::selection {
-  background: var(--theme-color);
-  color: #fff;
-}
