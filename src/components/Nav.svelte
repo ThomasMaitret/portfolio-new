@@ -25,15 +25,6 @@
         Accueil
       </a>
     </li>
-    <li class="mr-4">
-      <a
-        class="p-1"
-        rel="prefetch"
-        class:active={segment === 'work'}
-        href="work">
-        Projets
-      </a>
-    </li>
     <li>
       <a
         class="p-1"
