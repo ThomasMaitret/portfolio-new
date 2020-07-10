@@ -4,11 +4,9 @@
   "version": "2.0.0",
   "scripts": {
     "dev": "sapper dev",
-    "watch:tailwind": "postcss static/tailwind.css -o static/index.css -w",
-    "build:tailwind": "NODE_ENV=production postcss static/tailwind.css -o static/index.css",
-    "build": "npm run build:tailwind && sapper build --legacy",
+    "build": "sapper build --legacy",
     "start": "npm run build && node __sapper__/build",
-    "export": "npm run build:tailwind && sapper export"
+    "export": "sapper export"
   },
   "dependencies": {
     "helmet": "^3.23.3",
@@ -26,16 +24,13 @@
     "@rollup/plugin-commonjs": "^13.0.0",
     "@rollup/plugin-node-resolve": "^8.1.0",
     "@rollup/plugin-replace": "^2.3.3",
-    "postcss": "^7.0.32",
-    "postcss-cli": "7.1.1",
     "rollup": "^2.21.0",
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-svelte": "^5.2.3",
     "rollup-plugin-terser": "^6.1.0",
     "sapper": "^0.27.16",
     "svelte": "^3.24.0",
-    "svelte-preprocess": "^4.0.6",
-    "tailwindcss": "^1.4.6"
+    "svelte-preprocess": "^4.0.6"
   },
   "optionalDependencies": {
     "node-zopfli-es": "~1.0.6"

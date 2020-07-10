@@ -35,7 +35,6 @@ export default {
         dedupe: ["svelte"],
       }),
       commonjs(),
-
       legacy &&
         babel({
           extensions: [".js", ".mjs", ".html", ".svelte"],
@@ -59,17 +58,14 @@ export default {
             ],
           ],
         }),
-
       !dev &&
         terser({
           module: true,
         }),
     ],
-
     preserveEntrySignatures: false,
     onwarn,
   },
-
   server: {
     input: config.server.input(),
     output: config.server.output(),
@@ -91,11 +87,9 @@ export default {
       require("module").builtinModules ||
         Object.keys(process.binding("natives"))
     ),
-
     preserveEntrySignatures: "strict",
     onwarn,
   },
-
   serviceworker: {
     input: config.serviceworker.input(),
     output: config.serviceworker.output(),
@@ -108,7 +102,6 @@ export default {
       commonjs(),
       !dev && terser(),
     ],
-
     preserveEntrySignatures: false,
     onwarn,
   },
