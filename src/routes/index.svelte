@@ -23,7 +23,7 @@
   <h2 class="text-2xl max-w-3xl mt-2">
     Je suis développeur Front-end chez
     <a
-      rel="external"
+      rel="noopener"
       href="https://www.groupeonepoint.com/fr"
       target="_blank"
       class="font-bold hover:underline">
@@ -41,21 +41,21 @@
     <a
       href="https://twitter.com/ThomasMaitret"
       target="_blank"
-      rel="external"
+      rel="noopener"
       class="mr-4">
       <img width="30px" src="/social/twitter.svg" alt="Twitter profile" />
     </a>
     <a
       href="https://github.com/ThomasMaitret"
       target="_blank"
-      rel="external"
+      rel="noopener"
       class="mr-4">
       <img width="30px" src="/social/github.svg" alt="Github profile" />
     </a>
     <a
       href="https://www.linkedin.com/in/thomas-maitret/"
       target="_blank"
-      rel="external"
+      rel="noopener"
       class="mr-4">
       <img width="30px" src="/social/linkedin.svg" alt="Linkedin profile" />
     </a>
