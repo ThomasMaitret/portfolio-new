@@ -51,7 +51,7 @@
 </svelte:head>
 
 <h1 class="text-4xl font-bold">{post.title}</h1>
-<h3 class="text-xl text-gray-800">{post.date}</h3>
+<h3 class="text-xl text-gray-800 mt-2">{post.date}</h3>
 <div class="content max-w-3xl mt-16">
   {@html post.html}
 </div>
