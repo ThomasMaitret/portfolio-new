@@ -14,10 +14,10 @@ polka()
     sirv("static", {
       dev,
       maxAge: 31536000,
-      etag: true
+      etag: true,
     }),
     sapper.middleware()
   )
-  .listen(PORT, err => {
+  .listen(PORT, (err) => {
     if (err) console.log("error", err);
   });

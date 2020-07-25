@@ -31,9 +31,12 @@
     </a>
   </h2>
   <p class="mt-5 max-w-3xl text-lg leading-relaxed">
-    Je crée des interfaces sobres et faciles
-    d'utilisation, en mettant l'accent sur la
-    <strong>performance</strong> et l'<strong>accessibilité</strong>.
+    Je crée des interfaces sobres et faciles d'utilisation, en mettant l'accent
+    sur la
+    <strong>performance</strong>
+    et l'
+    <strong>accessibilité</strong>
+    .
     <br />
     J'ai une bonne expérience avec le framework Angular ainsi qu'avec NodeJS.
   </p>
