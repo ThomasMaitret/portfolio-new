@@ -16,17 +16,21 @@
     <link rel="stylesheet" href="global.css" />
     <link rel="icon" type="image/ico" href="favicon.ico" />
 
-    %sapper.styles% %sapper.head%
+    <!-- Sapper creates a <script> tag containing `src/client.js`
+	     and anything else it needs to hydrate the app and
+	     initialise the router -->
+    %sapper.scripts%
+
+    <!-- Sapper generates a <style> tag containing critical CSS
+	     for the current page. CSS for the rest of the app is
+	     lazily loaded when it precaches secondary pages -->
+    %sapper.styles%
+
+    <!-- This contains the contents of the <svelte:head> component, if
+	     the current page has one -->
+    %sapper.head%
   </head>
   <body class="antialiased subpixel-antialiased">
     <div id="sapper" class="container mx-auto px-4">%sapper.html%</div>
-
-    <!-- <footer
-      class="w-full pin-b text-center bg-gray-200 p-5 text-gray-800 mt-24"
-    >
-      Copyright © 2019 - Thomas Maitret - Tous droits réservés
-    </footer> -->
-
-    %sapper.scripts%
   </body>
 </html>
