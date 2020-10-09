@@ -12,7 +12,7 @@
 
 <nav class="my-16 flex items-center justify-between">
   <a rel="prefetch" href=".">
-    <img alt="Logo" src="favicon.ico" width="40" loading="lazy" />
+    <img alt="Logo" src="favicon.ico" width="40" />
   </a>
 
   <ul class="inline-flex text-lg">

@@ -46,21 +46,21 @@
       target="_blank"
       rel="noopener"
       class="mr-4">
-      <img width="30" src="twitter.svg" alt="Twitter profile" loading="lazy" />
+      <img width="30" src="twitter.svg" alt="Twitter profile" />
     </a>
     <a
       href="https://github.com/ThomasMaitret"
       target="_blank"
       rel="noopener"
       class="mr-4">
-      <img width="30" src="github.svg" alt="Github profile" loading="lazy" />
+      <img width="30" src="github.svg" alt="Github profile" />
     </a>
     <a
       href="https://www.linkedin.com/in/thomas-maitret/"
       target="_blank"
       rel="noopener"
       class="mr-4">
-      <img width="30" src="linkedin.svg" alt="Linkedin profile" loading="lazy" />
+      <img width="30" src="linkedin.svg" alt="Linkedin profile" />
     </a>
   </div>
 </section>
