@@ -6,7 +6,7 @@
     "dev": "sapper dev",
     "build": "sapper build",
     "start": "npm run build && node __sapper__/build",
-    "export": "sapper export"
+    "export": "NODE_ENV=production sapper export"
   },
   "dependencies": {
     "@rollup/plugin-commonjs": "^16.0.0",
