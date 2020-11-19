@@ -4,9 +4,5 @@ module.exports = {
     purgeLayersByDefault: true,
   },
   purge: ["src/**/*.svelte", "src/**/*.html"],
-  theme: {
-    extend: {},
-  },
-  variants: {},
-  plugins: [],
+  darkMode: "media",
 };

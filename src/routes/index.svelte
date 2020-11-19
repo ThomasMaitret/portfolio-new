@@ -1,8 +1,8 @@
 <script context="module">
   export function preload() {
     return this.fetch(`index.json`)
-      .then(r => r.json())
-      .then(posts => {
+      .then((r) => r.json())
+      .then((posts) => {
         return { posts };
       });
   }
@@ -16,7 +16,7 @@
   <title>Thomas Maitret - Développeur Front-end</title>
 </svelte:head>
 
-<section>
+<section class="text-gray-700 dark:text-gray-100">
   <h1 class="text-3xl md:text-5xl font-bold">
     Bonjour, je suis Thomas Maitret.
   </h1>
@@ -66,12 +66,13 @@
 </section>
 
 {#if posts.length > 0}
-  <section class="mt-32">
+  <section class="mt-32 text-gray-700 dark:text-gray-100">
     <h3 class="text-3xl mb-4">Articles récents</h3>
     <ul>
       {#each posts as post}
         <li class="mb-3 flex items-center text-lg">
-          <span class="text-gray-800 font-sm mr-3">{post.date}</span>
+          <span
+            class="text-gray-700 dark:text-gray-300 font-sm mr-3">{post.date}</span>
           <a
             class="font-bold hover:underline"
             rel="prefetch"
