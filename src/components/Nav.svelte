@@ -16,11 +16,7 @@
   }
 </style>
 
-<nav class="my-16 flex items-center justify-between">
-  <a rel="prefetch" href=".">
-    <img alt="Logo" src="favicon.ico" width="40" />
-  </a>
-
+<nav class="mt-16 mb-24">
   <ul class="inline-flex text-lg">
     <li class="mr-4">
       <a
