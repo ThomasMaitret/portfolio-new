@@ -15,7 +15,7 @@
     "autoprefixer": "^10.1.0",
     "node-zopfli-es": "~1.0.7",
     "polka": "^0.5.2",
-    "postcss": "^8.2.1",
+    "postcss": "^8.2.2",
     "rollup": "^2.35.1",
     "rollup-plugin-svelte": "^7.0.0",
     "rollup-plugin-terser": "^7.0.2",
@@ -26,6 +26,6 @@
     "tailwindcss": "^2.0.2"
   },
   "devDependencies": {
-    "svelte": "^3.31.0"
+    "svelte": "^3.31.2"
   }
 }
