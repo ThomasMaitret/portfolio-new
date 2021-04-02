@@ -3,9 +3,5 @@
 
 /** @type {import("snowpack").SnowpackUserConfig } */
 module.exports = {
-  optimize: {
-    bundle: true,
-    minify: true,
-    target: "es2017",
-  },
+  plugins: [["@snowpack/plugin-webpack"]],
 };

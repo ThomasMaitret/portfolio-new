@@ -1,9 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
   setRandomColors();
-
-  import("tsparticles").then(({tsParticles}) => {
-    tsParticles.loadJSON("tsparticles", "./particles.json");
-  });
 });
 
 function setRandomColors() {
