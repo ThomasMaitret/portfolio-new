@@ -1,0 +1,16 @@
+{
+  "name": "portfolio-new",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "snowpack dev",
+    "build": "snowpack build"
+  },
+  "author": "Thomas Maitret",
+  "license": "ISC",
+  "dependencies": {
+    "snowpack": "^3.2.2",
+    "tsparticles": "^1.24.3"
+  }
+}
