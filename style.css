@@ -20,11 +20,10 @@ body {
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 2rem;
-  text-align: center;
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1.7fr 1fr 0.3fr;
+  grid-template-rows: 0.25fr 0.25fr 0.25fr;
   gap: 0px 0px;
   grid-template-areas:
     "."
@@ -47,9 +46,7 @@ body {
 
 .links {
   display: flex;
-  justify-content: center;
-  align-self: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .links a {
@@ -57,6 +54,7 @@ body {
   display: inline-block;
   color: var(--text-color);
   transition: 2s color ease-in-out;
+  height: max-content;
 }
 
 @media screen and (min-width: 960px) {
@@ -78,5 +76,14 @@ body {
   }
   .subtitle {
     font-size: 1.75rem;
+  }
+  .container {
+    text-align: center;
+    grid-template-rows: 1.7fr 1fr 0.3fr;
+  }
+  .links {
+    justify-content: center;
+    align-self: center;
+    gap: 2rem;
   }
 }
