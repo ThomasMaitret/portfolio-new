@@ -3,5 +3,6 @@ export default {
     bundle: true,
     minify: true,
     target: "es2020",
+    sourcemap: false,
   },
 };
