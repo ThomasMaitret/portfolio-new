@@ -9,6 +9,6 @@
   "author": "Thomas Maitret",
   "license": "ISC",
   "dependencies": {
-    "snowpack": "^3.5.0"
+    "snowpack": "^3.5.1"
   }
 }
